@@ -1,4 +1,3 @@
-// Assignment Code
 
 //Password arrays
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -34,6 +33,7 @@ function generatePassword() {
  var userUpperCase = window.confirm("Click Ok if you would like to use uppercase letters in your password");
  var userLowerCase = window.confirm("Click Ok if you would like to use lowercase letters in your password");
 
+ //while loop for password parameters. If no parameters are chosen, it returns a false with prompt.
  while(userNumbers === false && userSymbols === false && userUpperCase === false && userLowerCase === false) {
   window.alert ("Please choose at least one parameter");
   return generatePassword();
@@ -48,24 +48,24 @@ function generatePassword() {
  if (userSymbols) {
   passwordPrompts = passwordPrompts.concat(symbols);
  }
- if (alphaUp) {
+ if (userUpperCase) {
   passwordPrompts = passwordPrompts.concat(alphaUp);
  }
- if (alphaLow) {
+ if (userLowerCase) {
   passwordPrompts = passwordPrompts.concat(alphaLow);
  }
 
  console.log(passwordPrompts);
 
 // 3. Generate password.
-// var password = "";
-var password = "";
+// reference an empty variable
+var passwordOutput = "";
 
 for (let i = 0; i < passwordLength; i++) {
-password = password + passwordPrompts[Math.floor(Math.random() * passwordPrompts.length)];
+passwordOutput = passwordOutput + passwordPrompts[Math.floor(Math.random() * passwordPrompts.length)];
 }
 // 4. display the generated password on the page 
- return password;
+ return passwordOutput;
 }
 
 // Write password to the #password input
