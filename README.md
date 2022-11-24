@@ -15,7 +15,7 @@ To use this application, click on the generate password button and follow the di
 
 ### Contact
 - Jonathan Peralta - example.com
-- Project Link: 
+- Project Link: https://jperalta24.github.io/Password-Generator/
 
 ### Acknowledgments
 -[Javascript random passwor generator](https://dev.to/code_mystery/random-password-generator-using-javascript-6a)
