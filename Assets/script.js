@@ -15,7 +15,7 @@ function generatePassword() {
  //converts string into integer
  var passwordLength = parseInt(userInput);
 
-//returns boolean for userInput
+//returns boolean for userInput if the return value is not an integer
  if (isNaN(passwordLength)) {
   window.alert("That's not a number!");
   return generatePassword();
@@ -55,15 +55,15 @@ function generatePassword() {
   passwordPrompts = passwordPrompts.concat(alphaLow);
  }
 
- console.log(passwordPrompts);
-
 // 3. Generate password.
 // reference an empty variable
 var passwordOutput = "";
 
+// math.floor(math.random) use to create random password.
+// create comment for below
 for (let i = 0; i < passwordLength; i++) {
-passwordOutput = passwordOutput + passwordPrompts[Math.floor(Math.random() * passwordPrompts.length)];
-}
+passwordOutput = passwordOutput + passwordPrompts[Math.floor(Math.random() * passwordPrompts.length)]; 
+} 
 // 4. display the generated password on the page 
  return passwordOutput;
 }
