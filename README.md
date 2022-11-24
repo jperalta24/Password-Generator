@@ -3,7 +3,7 @@
 ## About the Project
 With the help of JavaScript; I built this application for the purpose of creating random passwords for users based on their selected password criteria. It will randomly generate a password that is between 8-128 characters long. It will contain at least one of the following characters: Uppercase, lowercase, special character, or number. 
 
-![](Images\Password-generator.jpg)
+![](Assets\Images\Password-generator.jpg)
 
 ### Built With
 - HTML
